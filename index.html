@@ -23,11 +23,10 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand" href="#">Navbar</a>
-
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link test">test</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
@@ -51,11 +50,31 @@
       </div>
     </nav>
 
+    <div class="test_menu">
+      <div class="grid-5">
+        <img class="img-resposive" src="img/cap.jpg" alt=""cap>
+      </div>
+      <div class="grid-5">
+        <img class="img-resposive" src="img/cap.jpg" alt=""cap>
+      </div>
+      <div class="grid-5">
+        <img class="img-resposive" src="img/cap.jpg" alt=""cap>
+      </div>
+      <div class="grid-5">
+        <img class="img-resposive" src="img/cap.jpg" alt=""cap>
+      </div>
+      <div class="grid-5">
+        <img class="img-resposive" src="img/cap.jpg" alt=""cap>
+      </div>
+    </div>
+
+
+
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1 class="display-3">Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <h1 class="display-3">tu o bedzie film!</h1>
+        <p>tu napis</p>
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
       </div>
     </div>
@@ -95,5 +114,12 @@
     <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+      $( ".test" )
+      .mouseenter(function() {$(".test_menu").toggle( "slow" );})
+      .click(function() {$(".test_menu").toggle();});
+      // $("body")
+      // .click(function() {$(".test_menu").hide();});
+    </script>
   </body>
 </html>

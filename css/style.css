@@ -1,6 +1,25 @@
 
-
+.test_menu{
+  display: none;
+  position: absolute;
+  top: 56px;
+  left: 0%;
+  width: 100%;
+  height: 270px;
+  background-color: #ffffff;
+  z-index: 999999999;
+}
+.grid-5{
+  width: 19.7%;
+  max-height: 270px;
+  background-color: #232323;
+  display: inline-block;
+}
 /*kolor nav bara*/
 .bg-inverse {
     background-color: #402d1f !important;
+}
+.img-resposive{
+  width: 100%;
+  height: auto;
 }
