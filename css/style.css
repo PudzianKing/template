@@ -1,5 +1,5 @@
 .start{
-  padding-top: 60px;
+  padding-top: 600px;
 }
 .center{
     text-align: center;
@@ -27,6 +27,10 @@
     padding-left: 5px;
     padding-right: 5px;
 }
+.sub-menu .carousel-caption{
+    bottom: -35px;
+    font-weight: bold;
+}
 .test_menu{
   display: none;
   position: fixed;
@@ -36,12 +40,7 @@
   height: 150px;
   z-index: 999999999;
 }
-.grid-5{
-  width: 19.7%;
-  max-height: 150px;
-  background-color: #232323;
-  display: inline-block;
-}
+
 /*kolor nav bara*/
 .bg-inverse {
     background-color: #000000 !important;
@@ -52,5 +51,83 @@
   max-height: 120px;
 }
 .footer{
+
   background-color: #000000;
+}
+/*.viedo{
+    z-index: 1;
+
+}
+.video-caption{
+    z-index: 20;
+    background-color: #fff;
+    position: relative;
+    top: 500px;
+}*/
+
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -99;
+}
+.video-foreground,.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+#vidtop-content {
+	top: 0;
+	color: #fff;
+}
+.vid-info {
+  position: absolute;
+  top: 70%;
+  right: 18%;
+  width: 70%;
+  color: #fff; padding: 1rem;
+  font-family: Avenir, Helvetica, sans-serif;
+}
+.vid-info h1{
+ font-size: 4.5rem;
+ font-weight: bold;
+  margin-top: 0;
+  line-height: 1.2;
+  color: #ff7401;
+  text-align: right;
+  margin-bottom: -15px
+}
+.vid-info h2 {
+ display: block;
+ font-size: 2rem;
+ color: #fff;
+ border-bottom: none;
+ text-align: right;
+}
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%;
+  }
+}
+@media all and (max-width: 600px) {
+.vid-info {
+  width: 50%; padding: .5rem;
+  }
+.vid-info h1 {
+  margin-bottom: .2rem;
+  }
+}
+@media all and (max-width: 500px) {
+.vid-info .acronym {
+  display: none;
+  }
 }
