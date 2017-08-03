@@ -60,11 +60,13 @@
 }
 .bg-orange p{
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.1rem
 }
 .bg-orange h1{
+    padding-top: 5rem;
     font-weight: bold;
-    padding-bottom: 3rem;
+    padding-bottom: 1.5rem;
+    font-size: 2.2rem;
     color: #000;
 }
 .py-12{
@@ -80,7 +82,17 @@
     color: #000;
     font-weight: bold;
     border-radius: 0;
+    margin-top: 1.5rem;
 }
+.btn-white:focus{
+    border: solid 1px #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.btn-white:hover{
+    background-color: #ffecd2;
+}
+
 
 footer{
   background-color: #000000;
