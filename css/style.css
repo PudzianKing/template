@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600');
+
 @media  (min-width: 992px){
     .start{
       margin-top: 600px;
     }
+}
+body{
+    font-family: 'Roboto', sans-serif;;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 .center{
     text-align: center;
@@ -71,6 +80,10 @@
     font-size: 2.2rem;
     color: #000;
 }
+.bg-white{
+    background-color: #fff;
+}
+
 .py-4{
     padding-top: 4rem !important;
     padding-bottom: 12rem !important;
@@ -119,15 +132,15 @@
     color: #fff;
 }
 .nav-tabs .nav-link:hover{
-    border-bottom: solid 1px #ff7401;
+    border-bottom: solid 1px #fff;
 }
 
 .nav-tabs .nav-link.active{
-    background-color: #ff7401;
+    background-color: #fff;
     border-left: 0;
     border-right: 0;
     color: #000;
-    border-bottom-color: #ff7401;
+    border-bottom-color: #fff;
 }
 .portal{
     border: solid 10px #ff7401;

@@ -12,6 +12,9 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -19,12 +22,14 @@
 <body>
 
     <nav class="navbar navbar-toggleable-md navbar-inverse sticky-top bg-inverse">
-
-        <a class="navbar-brand" href="#"><img src="img/nav-logo.png" height="70px" alt=""cap></a>
-        <div class="collapse navbar-collapse " id="navbar">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-mobile" aria-controls="navbar-mobile" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <a class="navbar-brand" href="#"><img src="img/nav-logo.png" height="70px" alt="Graff"></a>
+        <div class="collapse navbar-collapse hidden-md-down" id="navbar">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link test" href="index.html">Home</a>
+                    <a class="nav-link test" href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link test" id="kolekcja" >Kolekcja</a>
@@ -40,6 +45,38 @@
                 </li>
             </ul>
         </div>
+
+        <div class="collapse navbar-collapse hidden-sm-up" id="navbar-mobile">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kolekcja</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Technologie</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown02">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gdzie kupić</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Obsługa klienta</a>
+          </li>
+
+
+        </ul>
+      </div>
     </nav>
 
     <div class="img_menu kolekcja" id="kolekcja_m">
@@ -54,7 +91,7 @@
             </div>
             <div class="col-2 sub-menu">
                 <a href="product.html">
-                    <img class="img-fluid" src="img/nav-img2.jpg" alt=""cap>
+                    <img class="img-fluid" src="img/nav-img2.jpg" alt="Spodnie">
                     <div class="carousel-caption">
                         <p>Spodnie</p>
                     </div>
@@ -62,7 +99,7 @@
             </div>
             <div class="col-2 sub-menu">
                 <a href="product.html">
-                    <img class="img-fluid" src="img/nav-img3.jpg" alt=""cap>
+                    <img class="img-fluid" src="img/nav-img3.jpg" alt="Koszula">
                     <div class="carousel-caption">
                         <p>Koszula</p>
                     </div>
@@ -70,7 +107,7 @@
             </div>
             <div class="col-2 sub-menu">
                 <a href="product.html">
-                    <img class="img-fluid" src="img/nav-img4.jpg" alt=""cap>
+                    <img class="img-fluid" src="img/nav-img4.jpg" alt="Kamizelka">
                     <div class="carousel-caption">
                         <p>Kamizelka</p>
                     </div>
@@ -78,9 +115,17 @@
             </div>
             <div class="col-2 sub-menu">
                 <a href="product.html">
-                    <img class="img-fluid" src="img/nav-img5.jpg" alt=""cap>
+                    <img class="img-fluid" src="img/nav-img5.jpg" alt="Czapka">
                     <div class="carousel-caption">
                         <p>Czapka</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-2 sub-menu">
+                <a href="product.html">
+                    <img class="img-fluid" src="img/nav-img5.jpg" alt="Koszulka">
+                    <div class="carousel-caption">
+                        <p>Koszulka</p>
                     </div>
                 </a>
             </div>
@@ -107,12 +152,12 @@
     </div>
 
 
-    <div class="video-background">
+    <div class="video-background hidden-md-down">
         <div class="video-foreground">
             <div id="muteYouTubeVideoPlayer"></div>
         </div>
     </div>
-    <div id="vidtop-content">
+    <div class="hidden-md-down" id="vidtop-content">
         <div class="vid-info">
 	        <h1>ODZIEŻ OCHRONNA</h1>
             <h2>odstraszająca kleszcze i komary</h2>
@@ -138,26 +183,6 @@
 
         </div>
     </div>
-    <!-- <div class="row">
-        <div class="col-md-5">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-7">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-        </div>
-    </div> -->
-
-
 </div>
 
 </div> <!-- /container -->
@@ -203,9 +228,6 @@
  }
 </script>
 <script>
-// $( ".test" )
-// .mouseenter(function() {$(".img_menu").toggle();})
-// .click(function() {$(".img_menu").toggle();});
 $( "#kolekcja" )
 .mouseenter(function() {
     $("#technologie_m").hide();
@@ -218,8 +240,6 @@ $( "#technologie" )
     $("#technologie_m").toggle();
 })
 .click(function() {$("#technologie_m").toggle();});
-// $("body")
-// .click(function() {$(".img_menu").hide();});
 </script>
 </body>
 </html>
