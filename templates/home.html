@@ -1,0 +1,63 @@
+<div class="video-background hidden-md-down">
+    <div class="video-foreground">
+        <div id="muteYouTubeVideoPlayer"></div>
+    </div>
+</div>
+<div class="hidden-md-down" id="vidtop-content">
+    <div class="video-info">
+        <h1>ODZIEŻ OCHRONNA</h1>
+        <h2>odstraszająca kleszcze i komary</h2>
+    </div>
+ </div>
+
+<div class="container-fluid start bg-orange">
+<div class="container">
+<!-- Example row of columns -->
+<div class="row py-4">
+    <div class="col-md-6">
+        <h1>Odzież ochronna antyinsektowa <br>z tkaniny RS-1500</h1>
+        <p>- z wtopioną substancją owadobójczą Eulan Spa 01</p>
+        <p>- uszyta ze 190 gramowej bawełny o bardzo gęstym splocie</p>
+        <p>- dodane wzmocnienia z wytrzymałego materiału</p>
+        <p>- zabezpieczona przed przelotnymi deszczami</p>
+        <p>- uzupełniona o podwyższoną odporność na promieniowanie UV</p>
+        <a href="#"><button type="button" class="btn btn-white">Zobacz film</button></a>
+
+    </div>
+    <div class="col-md-6">
+        <img class="img-fluid" src="img/829-KO.png" alt="829-KO">
+
+    </div>
+</div>
+</div>
+
+</div> <!-- /container -->
+<script async src="https://www.youtube.com/iframe_api"></script>
+<script>
+ function onYouTubeIframeAPIReady() {
+  var player;
+  player = new YT.Player('muteYouTubeVideoPlayer', {
+    videoId:'RkRf496kU_8', // YouTube Video ID 6ktnrKG8uq4
+    width: 560,               // Player width (in px)
+    height: 316,              // Player height (in px)
+    suggestedQuality:'hd1080',
+    playerVars: {
+      autoplay: 1,        // Auto-play the video on load
+      controls: 1,        // Show pause/play buttons in player
+      showinfo: 0,        // Hide the video title
+      modestbranding: 1,  // Hide the Youtube Logo
+      loop: 1,            // Run the video in a loop
+      playlist:'RkRf496kU_8',
+      fs: 0,              // Hide the full screen button
+      cc_load_policy: 0, // Hide closed captions
+      iv_load_policy: 3,  // Hide the Video Annotations
+      autohide: 0         // Hide video controls when playing
+    },
+    events: {
+      onReady: function(e) {
+        e.target.mute();
+      }
+    }
+  });
+ }
+</script>

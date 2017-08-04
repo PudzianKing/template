@@ -1,0 +1,42 @@
+<footer>
+    <div class="container">
+        <p>&copy; Siewo 23</p>
+    </div>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+$( "#kolekcja-m" )
+.mouseenter(function() {
+    $("#technologie_m").hide();
+    $("#kolekcja-k_m").hide();
+    $("#kolekcja-m_m").toggle();
+    window.setTimeout(function(){$("#kolekcja-m_m").hide();}, 15000);
+})
+.click(function() {$("#kolekcja-m_m").toggle();});
+$( "#kolekcja-k" )
+.mouseenter(function() {
+    $("#technologie_m").hide();
+    $("#kolekcja-m_m").hide();
+    $("#kolekcja-k_m").toggle();
+    window.setTimeout(function(){$("#kolekcja-k_m").hide();}, 15000);
+})
+.click(function() {$("#kolekcja-k_m").toggle();});
+$( "#technologie" )
+.mouseenter(function() {
+    $("#kolekcja-m_m").hide();
+    $("#kolekcja-k_m").hide();
+    $("#technologie_m").toggle();
+    window.setTimeout(function(){$("#technologie_m").hide();}, 15000);
+})
+.click(function() {$("#technologie_m").toggle();});
+</script>
+</body>
+</html>
