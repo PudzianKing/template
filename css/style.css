@@ -24,7 +24,7 @@ h1{
 }
 .navbar-collapse{
     padding-top: 40px;
-    border-bottom: solid 1px white;
+    /*border-bottom: solid 1px white;*/
     font-weight: bold;
 }
 .navbar-collapse li{
@@ -127,6 +127,9 @@ h1{
 
 .bg-orange .btn-white:hover{
     background-color: #ffecd2;
+}
+.nav-item{
+    border-bottom: solid 1px white;
 }
 .nav-tabs{
     background-color: #000;
