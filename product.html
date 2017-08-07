@@ -6,146 +6,309 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="img/favicon.ico">
-
-    <title>Służby leśne</title>
-
+    <title>Służby leśne | strona główna</title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-    <!-- Custom styles for this template -->
+    <!-- Custom style -->
     <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body>
+<nav class="navbar navbar-toggleable-md navbar-inverse sticky-top bg-inverse">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-mobile" aria-controls="navbar-mobile" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="index.html"><img src="img/nav/nav-logo.png" height="70px" alt="Graff"></a>
+    <div class="collapse navbar-collapse hidden-md-down" id="navbar">
+        <h1 class="menu-title">odzież ochronna dla służb leśnych</h1>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="kolekcja-m" >Mężczyzna</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="kolekcja-k" >Kobieta</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="technologie" >Technologie</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="gdzie_kupic.html">Gdzie kupić</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="obsluga.html">Obsługa klienta</a>
+            </li>
+        </ul>
+    </div>
 
-    <nav class="navbar navbar-toggleable-md navbar-inverse sticky-top bg-inverse">
+    <div class="collapse hidden-md-up" id="navbar-mobile" >
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Strona główna</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mężczyzna</a>
+                <div class="dropdown-menu dropdown-menu-black" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="produkty/mężczyzna/Kurtka_600.html">Kurtka</a>
+                    <a class="dropdown-item" href="produkty/mężczyzna/Spodnie_700.html">Spodnie</a>
+                    <a class="dropdown-item" href="produkty/mężczyzna/Koszula_829-KO.html">Koszula</a>
+                    <a class="dropdown-item" href="produkty/mężczyzna/Kamizelka_442-O.html">Kamizelka</a>
+                    <a class="dropdown-item" href="produkty/mężczyzna/Czapka_103.html">Czapka</a>
+                    <a class="dropdown-item" href="produkty/mężczyzna/Koszulka_959-OL.html">Koszulka</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kobieta</a>
+                <div class="dropdown-menu dropdown-menu-black" aria-labelledby="dropdown03">
+                    <a class="dropdown-item" href="produkty/kobieta/Kurtka_600.html">Kurtka</a>
+                    <a class="dropdown-item" href="produkty/kobieta/Spodnie_700.html">Spodnie</a>
+                    <a class="dropdown-item" href="produkty/kobieta/Koszula_829-KO.html">Koszula</a>
+                    <a class="dropdown-item" href="produkty/kobieta/Kamizelka_442-O.html">Kamizelka</a>
+                    <a class="dropdown-item" href="produkty/kobieta/Czapka_103.html">Czapka</a>
+                    <a class="dropdown-item" href="produkty/kobieta/Koszulka_959-OL.html">Koszulka</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Technologie</a>
+                <div class="dropdown-menu dropdown-menu-black" aria-labelledby="dropdown02">
+                    <a class="dropdown-item" href="technologie/kleszcz.html">Kleszcz</a>
+                    <a class="dropdown-item" href="technologie/dry_care.html">Dry Care</a>
+                    <a class="dropdown-item" href="technologie/uv_proof.html">UV Proof</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="gdzie_kupic.html">Gdzie kupić</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="obsluga.html">Obsługa klienta</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
-        <a class="navbar-brand" href="#"><img src="img/nav/nav-logo.png" height="70px" alt="" cap></a>
-        <div class="collapse navbar-collapse " id="navbar">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link test" href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link test" id="kolekcja" >Kolekcja</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link test" id="technologie" >Technologie</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link test" href="where.html">Gdzie kupić</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link test" href="support.html">Obsługa klienta</a>
-                </li>
-            </ul>
+<div class="img_menu kolekcja" id="kolekcja-m_m">
+    <div class="row">
+        <div class="col-2 sub-menu">
+            <a href="produkty/mężczyzna/Kurtka_600.html">
+                <img class="img-fluid" src="img/nav/nav-img1.jpg" alt="Kurtka">
+                <div class="carousel-caption">
+                    <p>Kurtka</p>
+                </div>
+            </a>
         </div>
-    </nav>
-
-    <div class="img_menu kolekcja" id="kolekcja_m">
-        <div class="row">
-            <div class="col-2 sub-menu">
-                <a href="product.html">
-                    <img class="img-fluid" src="img/nav/nav-img1.jpg" alt="Kurtka">
-                    <div class="carousel-caption">
-                        <p>Kurtka</p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-2 sub-menu">
-                <a href="product.html">
-                    <img class="img-fluid" src="img/nav/nav-img2.jpg" alt="Spodnie">
-                    <div class="carousel-caption">
-                        <p>Spodnie</p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-2 sub-menu">
-                <a href="product.html">
-                    <img class="img-fluid" src="img/nav/nav-img3.jpg" alt="Koszula">
-                    <div class="carousel-caption">
-                        <p>Koszula</p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-2 sub-menu">
-                <a href="product.html">
-                    <img class="img-fluid" src="img/nav/nav-img4.jpg" alt="Kamizelka">
-                    <div class="carousel-caption">
-                        <p>Kamizelka</p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-2 sub-menu">
-                <a href="product.html">
-                    <img class="img-fluid" src="img/nav/nav-img5.jpg" alt="Czapka">
-                    <div class="carousel-caption">
-                        <p>Czapka</p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-2 sub-menu">
-                <a href="product.html">
-                    <img class="img-fluid" src="img/nav/nav-img5.jpg" alt="Koszulka">
-                    <div class="carousel-caption">
-                        <p>Koszulka</p>
-                    </div>
-                </a>
-            </div>
+        <div class="col-2 sub-menu">
+            <a href="produkty/mężczyzna/Spodnie_700.html">
+                <img class="img-fluid" src="img/nav/nav-img2.jpg" alt="Spodnie">
+                <div class="carousel-caption">
+                    <p>Spodnie</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-2 sub-menu">
+            <a href="produkty/mężczyzna/Koszula_829-KO.html">
+                <img class="img-fluid" src="img/nav/nav-img3.jpg" alt="Koszula">
+                <div class="carousel-caption">
+                    <p>Koszula</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-2 sub-menu">
+            <a href="produkty/mężczyzna/Kamizelka_442-O.html">
+                <img class="img-fluid" src="img/nav/nav-img4.jpg" alt="Kamizelka">
+                <div class="carousel-caption">
+                    <p>Kamizelka</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-2 sub-menu">
+            <a href="produkty/mężczyzna/Czapka_103.html">
+                <img class="img-fluid" src="img/nav/nav-img5.jpg" alt="Czapka">
+                <div class="carousel-caption">
+                    <p>Czapka</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-2 sub-menu">
+            <a href="produkty/mężczyzna/Koszulka_959-OL.html">
+                <img class="img-fluid" src="img/nav/nav-img6.jpg" alt="Koszulka">
+                <div class="carousel-caption">
+                    <p>Koszulka</p>
+                </div>
+            </a>
         </div>
     </div>
-    <div class="img_menu technologie" id="technologie_m">
-        <div class="row">
-            <div class="col-2 sub-menu">
-                <a href="#">
-                    <img class="img-fluid" src="img/cap.jpg" alt=""cap>
-                </a>
-            </div>
-            <div class="col-2 sub-menu">
-                <a href="#">
-                    <img class="img-fluid" src="img/cap.jpg" alt=""cap>
-                </a>
-            </div>
-            <div class="col-2 sub-menu">
-                <a href="#">
-                    <img class="img-fluid" src="img/cap.jpg" alt=""cap>
-                </a>
-            </div>
+</div>
+
+<div class="img_menu kolekcja" id="kolekcja-k_m">
+    <div class="row">
+        <div class="col-2 sub-menu">
+            <a href="produkty/kobieta/Kurtka_600.html">
+                <img class="img-fluid" src="img/nav/nav-img1-k.jpg" alt="Kurtka">
+                <div class="carousel-caption">
+                    <p>Kurtka</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-2 sub-menu">
+            <a href="produkty/kobieta/Spodnie_700.html">
+                <img class="img-fluid" src="img/nav/nav-img2-k.jpg" alt="Spodnie">
+                <div class="carousel-caption">
+                    <p>Spodnie</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-2 sub-menu">
+            <a href="produkty/kobieta/Koszula_829-KO.html">
+                <img class="img-fluid" src="img/nav/nav-img3-k.jpg" alt="Koszula">
+                <div class="carousel-caption">
+                    <p>Koszula</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-2 sub-menu">
+            <a href="produkty/kobieta/Kamizelka_442-O.html">
+                <img class="img-fluid" src="img/nav/nav-img4-k.jpg" alt="Kamizelka">
+                <div class="carousel-caption">
+                    <p>Kamizelka</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-2 sub-menu">
+            <a href="produkty/kobieta/Czapka_103.html">
+                <img class="img-fluid" src="img/nav/nav-img5-k.jpg" alt="Czapka">
+                <div class="carousel-caption">
+                    <p>Czapka</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-2 sub-menu">
+            <a href="produkty/kobieta/Koszulka_959-OL.html">
+                <img class="img-fluid" src="img/nav/nav-img6-k.jpg" alt="Koszulka">
+                <div class="carousel-caption">
+                    <p>Koszulka</p>
+                </div>
+            </a>
         </div>
     </div>
+</div>
+
+<div class="img_menu technologie" id="technologie_m">
+    <div class="row">
+        <div class="col-2 sub-menu">
+            <a href="technologie/kleszcz.html">
+                <img class="img-fluid" src="img/nav/nav-img1-t.jpg" alt="Kleszcz">
+            </a>
+        </div>
+        <div class="col-2 sub-menu">
+            <a href="technologie/uv_proof.html">
+                <img class="img-fluid" src="img/nav/nav-img2-t.jpg" alt="UV proof">
+            </a>
+        </div>
+        <div class="col-2 sub-menu">
+            <a href="technologie/dry_care.html">
+                <img class="img-fluid" src="img/nav/nav-img3-t.jpg" alt="Dry Care">
+            </a>
+        </div>
+    </div>
+</div>
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                      <img class="d-block img-fluid" src="img/829-KO_shadow.png" alt="First slide">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block img-carousel" src="img/cap.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-carousel" src="img/pracownik1.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-carousel" src="img/829-KO_shadow.png" alt="Third slide">
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                      <img class="d-block img-fluid" src="img/829-KO_shadow.png" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                      <img class="d-block img-fluid" src="img/829-KO_shadow.png" alt="Third slide">
-                    </div>
-                  </div>
-                  <a class="carousel-control-prev" href="#" role="button" data-slide="prev"></a>
-                  <a class="carousel-control-next" href="#" role="button" data-slide="next"></a>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-                <div class="row class="carousel-indicators"">
-                    <div class="col-md-4">
-                        <img class="img-fluid" src="img/829-KO_shadow.png" alt="829-KO" data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid" src="img/829-KO_shadow.png" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="img/829-KO_shadow.png" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="img/829-KO_shadow.png" alt="Third slide">
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <img class="img-fluid" src="img/829-KO_shadow.png" alt="829-KO" data-target="#carouselExampleIndicators" data-slide-to="1">
-                    </div>
-                    <div class="col-md-4">
-                        <img class="img-fluid" src="img/829-KO_shadow.png" alt="829-KO" data-target="#carouselExampleIndicators" data-slide-to="2">
-                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
+                <!--<div class="row carousel-indicators">-->
+                    <!--<div class="col-md-4">-->
+                        <!--<img class="img-fluid active" src="img/829-KO_shadow.png" alt="829-KO" data-target="#carouselExampleIndicators" data-slide-to="0">-->
+                    <!--</div>-->
+                    <!--<div class="col-md-4">-->
+                        <!--<img class="img-fluid" src="img/829-KO_shadow.png" alt="829-KO" data-target="#carouselExampleIndicators" data-slide-to="1">-->
+                    <!--</div>-->
+                    <!--<div class="col-md-4">-->
+                        <!--<img class="img-fluid" src="img/829-KO_shadow.png" alt="829-KO" data-target="#carouselExampleIndicators" data-slide-to="2">-->
+                    <!--</div>-->
+                <!--</div>-->
+
+
+
+                <!--<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">-->
+                    <!--<div class="carousel-inner" role="listbox">-->
+                        <!--<div class="carousel-item active">-->
+                            <!--<img class="d-block img-fluid" src="img/829-KO_shadow.png" alt="First slide">-->
+                        <!--</div>-->
+                        <!--<div class="carousel-item">-->
+                            <!--<img class="d-block img-fluid" src="img/829-KO_shadow.png" alt="Second slide">-->
+                        <!--</div>-->
+                        <!--<div class="carousel-item">-->
+                            <!--<img class="d-block img-fluid" src="img/829-KO_shadow.png" alt="Third slide">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<a class="carousel-control-prev" href="#" role="button" data-slide="prev"></a>-->
+                    <!--<a class="carousel-control-next" href="#" role="button" data-slide="next"></a>-->
+                <!--</div>-->
+                    <!--<div class="row carousel-indicators">-->
+                        <!--<div class="col-md-4">-->
+                            <!--<img class="img-fluid active" src="img/829-KO_shadow.png" alt="829-KO" data-target="#carouselExampleIndicators" data-slide-to="0">-->
+                        <!--</div>-->
+                        <!--<div class="col-md-4">-->
+                            <!--<img class="img-fluid" src="img/829-KO_shadow.png" alt="829-KO" data-target="#carouselExampleIndicators" data-slide-to="1">-->
+                        <!--</div>-->
+                        <!--<div class="col-md-4">-->
+                            <!--<img class="img-fluid" src="img/829-KO_shadow.png" alt="829-KO" data-target="#carouselExampleIndicators" data-slide-to="2">-->
+                        <!--</div>-->
+                    <!--</div>-->
             </div>
 
             <div class="col-md-6">
