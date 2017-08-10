@@ -48,8 +48,11 @@ h1{
         padding-right: 3rem;/*3 old menu*/
     }
 }
-
-
+@media (min-width: 1200px){
+    .container {
+        width: 1000px;
+    }
+}
 .menu-title{
     position: fixed;
     top: 10px;
