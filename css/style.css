@@ -284,12 +284,12 @@ p{
     border-bottom-color: #fff;
 }
 .portal{
-    border: solid 10px #ff7401;
+    border: solid 4px #ff7401;
 }
 
 footer{
     background-color: #000000;
-    margin-top: 1.5rem;
+    margin-top: 8rem;
 }
 footer p{
     margin-bottom: 0;
