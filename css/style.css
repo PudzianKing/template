@@ -3,7 +3,7 @@
 
 @media  (min-width: 992px){
     .start{
-      margin-top: 600px;/*600 old menu*/
+        margin-top: 600px;/*600 old menu*/
     }
 }
 body{
@@ -17,6 +17,16 @@ h1{
 p{
     font-family: Roboto;
     font-size: 0.875rem;
+}
+.carousel-indicators-img{
+    border: solid 1px #fff;
+    border-radius: 0.25rem;
+}
+.carousel-indicators-img:hover{
+    border: solid 1px #898989;
+}
+.carousel-indicators-img.active{
+    border: solid 2px #ff7401;
 }
 .product-title{
     font-family: Roboto;
@@ -49,6 +59,10 @@ p{
 .color-grey{
     /*color: #898989;*/
 }
+.a-h2{
+    cursor: pointer;
+}
+
 .border-bottom-grey{
     border-bottom: solid 1px #898989;
 }
@@ -114,16 +128,16 @@ p{
     border: solid 1px #fff;
 }
 .img_menu{
-  display: none;
-  position: fixed;
-  top: 91px;
-  left: 28%;
-  width: 54%;
-  height: 150px;
-  z-index: 999999999;
+    display: none;
+    position: fixed;
+    top: 91px;
+    left: 28%;
+    width: 54%;
+    height: 150px;
+    z-index: 999999999;
 }
 .technologie{
-     left: 49%;
+    left: 49%;
 }
 .kolekcja{
     left: 25%;
@@ -150,6 +164,8 @@ p{
 .bg-white{
     background-color: #fff;
 }
+
+
 .img-carousel-indicators {
     margin-top: 1rem;
     display: -webkit-box;
@@ -187,8 +203,8 @@ p{
     padding-bottom: 12rem !important;
 }
 .img-resposive{
-  width: auto;
-  max-height: 120px;
+    width: auto;
+    max-height: 120px;
 }
 .btn-white{
     background-color: #fff;
@@ -272,7 +288,8 @@ p{
 }
 
 footer{
-  background-color: #000000;
+    background-color: #000000;
+    margin-top: 1.5rem;
 }
 footer p{
     margin-bottom: 0;
@@ -284,70 +301,70 @@ footer p{
 
 
 .video-background {
-  background: #000;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -99;
+    background: #000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -99;
 }
 .video-foreground,.video-background iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
 }
 #vidtop-content {
-	top: 0;
-	color: #fff;
+    top: 0;
+    color: #fff;
 }
 .video-info {
-  position: absolute;
-  top: 70%;
-  right: 18%;
-  width: 70%;
-  color: #fff; padding: 1rem;
-  font-family: Avenir, Helvetica, sans-serif;
+    position: absolute;
+    top: 70%;
+    right: 18%;
+    width: 70%;
+    color: #fff; padding: 1rem;
+    font-family: Avenir, Helvetica, sans-serif;
 }
 .video-info h1{
- font-size: 4.5rem;
- font-weight: bold;
-  margin-top: 0;
-  line-height: 1.2;
-  color: #ff7401;
-  text-align: right;
-  margin-bottom: -15px
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin-top: 0;
+    line-height: 1.2;
+    color: #ff7401;
+    text-align: right;
+    margin-bottom: -15px
 }
 .video-info h2 {
- display: block;
- font-size: 2rem;
- color: #fff;
- border-bottom: none;
- text-align: right;
+    display: block;
+    font-size: 2rem;
+    color: #fff;
+    border-bottom: none;
+    text-align: right;
 }
 @media (min-aspect-ratio: 16/9) {
-  .video-foreground { height: 300%; top: -100%;
-  }
+    .video-foreground { height: 300%; top: -100%;
+    }
 }
 @media (max-aspect-ratio: 16/9) {
-  .video-foreground { width: 300%; left: -100%;
-  }
+    .video-foreground { width: 300%; left: -100%;
+    }
 }
 @media all and (max-width: 600px) {
-.video-info {
-  width: 50%; padding: .5rem;
-  }
-.video-info h1 {
-  margin-bottom: .2rem;
-  }
+    .video-info {
+        width: 50%; padding: .5rem;
+    }
+    .video-info h1 {
+        margin-bottom: .2rem;
+    }
 }
 @media all and (max-width: 500px) {
-.video-info .acronym {
-  display: none;
-  }
+    .video-info .acronym {
+        display: none;
+    }
 }
 
 
@@ -358,8 +375,14 @@ footer p{
 }
 
 .carousel-indicators .active {
-    background-color: #ff7401;
+    /*background-color: #ff7401;*/
+    background: none;
 }
 .carousel-indicators li {
-    background-color: rgba(255, 116, 1, 0.5);
+    /*background-color: rgba(255, 116, 1, 0.5);*/
+    background: none;
+    height: auto;
+}
+.carousel-indicators {
+    position: inherit;
 }
