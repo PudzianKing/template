@@ -13,6 +13,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- Custom style -->
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://unpkg.com/vue"></script>
 </head>
 <body>
 <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
@@ -28,18 +29,18 @@
                     <a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mężczyzna</a>
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mężczyzna</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item" href="Kurtka_600.html">Kurtka</a>
-                        <a class="dropdown-item" href="Spodnie_700.html">Spodnie</a>
-                        <a class="dropdown-item" href="Koszula_829-KO.html">Koszula</a>
-                        <a class="dropdown-item" href="Kamizelka_442-O.html">Kamizelka</a>
-                        <a class="dropdown-item" href="Czapka_103.html">Czapka</a>
-                        <a class="dropdown-item" href="Koszulka_959-OL.html">Koszulka</a>
+                        <a class="dropdown-item" href="produkty/mężczyzna/Kurtka_600.html">Kurtka</a>
+                        <a class="dropdown-item" href="produkty/mężczyzna/Spodnie_700.html">Spodnie</a>
+                        <a class="dropdown-item" href="produkty/mężczyzna/Koszula_829-KO.html">Koszula</a>
+                        <a class="dropdown-item" href="produkty/mężczyzna/Kamizelka_442-O.html">Kamizelka</a>
+                        <a class="dropdown-item" href="produkty/mężczyzna/Czapka_103.html">Czapka</a>
+                        <a class="dropdown-item" href="produkty/mężczyzna/Koszulka_959-OL.html">Koszulka</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kobieta</a>
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kobieta</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown02">
                         <a class="dropdown-item" href="Kurtka_600_k.html">Kurtka</a>
                         <a class="dropdown-item" href="Spodnie_700_k.html">Spodnie</a>
@@ -50,11 +51,11 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Technologie</a>
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Technologie</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown03">
-                        <a class="dropdown-item" href="kleszcz.html">Kleszcz</a>
-                        <a class="dropdown-item" href="dry_care.html">Dry Care</a>
-                        <a class="dropdown-item" href="uv_proof.html">UV Proof</a>
+                        <a class="dropdown-item" href="technologie/kleszcz.html">Kleszcz</a>
+                        <a class="dropdown-item" href="technologie/dry_care.html">Dry Care</a>
+                        <a class="dropdown-item" href="technologie/uv_proof.html">UV Proof</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -71,6 +72,7 @@
 <div class="container">
     <div class="row pt-5">
         <div class="col-md-6">
+
             <div id="carouselExampleIndicators" class="carousel slide px-5" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -111,6 +113,9 @@
                 </a>
             </div>
             <ol class=" img-carousel-indicators">
+                <li v-for="img in imgs">
+                    {{ img.text }}
+                </li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
                     <img class="d-block img-fluid rounded" src="img/produkty/kobieta/829-KO/829-KO-p.png" alt="First slide">
                 </li>
@@ -274,7 +279,7 @@
                         </div>
                     </div>
                     <div class="col-md-5">
-                        <h2 class="title-small py-2">Wymiary modelu</h2>
+                        <h2 class="title-small text-center py-2">Wymiary Modelu</h2>
                         <div class="container pl-0">
                             <div class=" d-flex justify-content-between border-bottom-grey mb-2 pl-1 pr-2">
                                 <p class="color-grey mb-0">Szerokość pod pachami</p>
@@ -292,8 +297,8 @@
                                 <p class="color-grey mb-0">Długość rekawa od kołnierza</p>
                                 <p class="color-grey mb-0">68,5 cm</p>
                             </div>
-                            <p class="color-grey font-italic">Podane informacje dotyczą modelu o rozmiarze L</p>
-                            <button class="btn btn-danger btn-orange" type="button" data-toggle="collapse" data-target="#see_more" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">Więcej rozmiarów</button>
+                            <p class="color-grey font-italic">* Wymiary podane dla rozmiaru L</p>
+                            <button class="btn btn-danger btn-orange"type="button" data-toggle="collapse" data-target="#see_more" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">Więcej rozmiarów</button>
                             <div class="collapse" id="see_more">
                                 <p class="color-grey mb-0 mt-4">Rozmiar XS</p>
                                 <div class=" d-flex justify-content-between border-bottom-grey mb-2 pl-1 pr-2">
@@ -431,7 +436,7 @@
                                     <!--Wymiary podane dla rozmiaru L-->
                                 <!--</p>-->
                             </div>
-                            <h2 class="title-small py-4">Tablea rozmiarów</h2>
+                            <h2 class="title-small py-2">Tablea rozmiarów</h2>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -448,31 +453,31 @@
             </div>
             <div class="tab-pane fade" id="gallery" role="tabpanel" aria-labelledby="help-tab" aria-expanded="false">
 
-                <div class="row my-3">
-                    <div class="col-md-3">
-                        <a href="#" class="" data-toggle="modal" data-target="#exampleModal">
-                            <img class="d-block img-fluid" src="http://animalinstances.com/wp-content/uploads/2016/05/Holopainen_Image02.jpg" alt="img">
-                        </a>
-                    </div>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
-                    <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <img class="d-block img-fluid" src="http://animalinstances.com/wp-content/uploads/2016/05/Holopainen_Image02.jpg" alt="img">
-                            </div>
-                            <div class="modal-footer">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!--<div class="row my-3">-->
+                    <!--<div class="col-md-3">-->
+                        <!--<a href="#" class="" data-toggle="modal" data-target="#exampleModal">-->
+                            <!--<img class="d-block img-fluid" src="img/produkty/kobieta/829-KO/829-KO-d_2.png" alt="img">-->
+                        <!--</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--&lt;!&ndash; Modal &ndash;&gt;-->
+                <!--<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">-->
+                    <!--<div class="modal-dialog modal-lg" role="document">-->
+                        <!--<div class="modal-content">-->
+                            <!--<div class="modal-header">-->
+                                <!--<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>-->
+                                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+                                    <!--<span aria-hidden="true">&times;</span>-->
+                                <!--</button>-->
+                            <!--</div>-->
+                            <!--<div class="modal-body">-->
+                                <!--<img class="d-block img-fluid" src="img/produkty/kobieta/829-KO/829-KO-d_2.png" alt="img">-->
+                            <!--</div>-->
+                            <!--<div class="modal-footer">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
 
             </div>
         </div>
@@ -492,6 +497,18 @@
 <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
+<script>
+    var app4 = new Vue({
+        el: '#app-4',
+        data: {
+            imgs: [
+                { text: 'Learn JavaScript' },
+                { text: 'Learn Vue' },
+                { text: 'Build something awesome' }
+            ]
+        }
+    })
+</script>
 
 </body>
 </html>
