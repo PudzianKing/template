@@ -510,25 +510,26 @@
 
     /*iamges for gallery*/
     var imgs=[
-        {title:"Tytuł", url:"img/galeria/IMG_4130.jpg"},
-        {title:"Tytuł", url:"img/galeria/IMG_4845.jpg"},
-        {title:"Tytuł", url:"img/galeria/IMG_4862.jpg"},
-        {title:"Tytuł", url:"img/galeria/IMG_4934.jpg"},
-        {title:"Tytuł", url:"img/galeria/IMG_4943.jpg"},
-        {title:"Tytuł", url:"img/galeria/IMG_4971.jpg"},
-        {title:"Tytuł", url:"img/galeria/IMG_4981.jpg"},
-        {title:"Tytuł", url:"img/galeria/IMG_5000.jpg"},
-        {title:"Tytuł", url:"img/galeria/IMG_5033.jpg"},
-        {title:"Tytuł", url:"img/galeria/IMG_5033.jpg"},
-        {title:"Tytuł", url:"img/galeria/IMG_5046.jpg"},
-        {title:"Tytuł", url:"img/galeria/IMG_5081.jpg"},
-        {title:"Tytuł", url:"img/galeria/IMG_5093.jpg"},
-        {title:"Tytuł", url:"img/galeria/IMG_5134.jpg"},
-        {title:"Tytuł", url:"img/galeria/IMG_5138.jpg"},
-        {title:"Tytuł", url:"img/galeria/IMG_5150.jpg"},
-        {title:"Tytuł", url:"img/galeria/IMG_5165.jpg"},
-        {title:"Tytuł", url:"img/galeria/IMG_5280.jpg"},
-        {title:"Tytuł", url:"img/galeria/IMG_5341.jpg"}
+        {title:"Tytuł", url:"img/galeria/IMG_4130.jpg", position:1},
+        {title:"Tytuł", url:"img/galeria/IMG_4845.jpg", position:1},
+        {title:"Tytuł", url:"img/galeria/IMG_4862.jpg", position:1},
+        {title:"Tytuł", url:"img/galeria/IMG_4934.jpg", position:1},
+        {title:"Tytuł", url:"img/galeria/IMG_4943.jpg", position:2},
+        {title:"Tytuł", url:"img/galeria/IMG_4971.jpg", position:1},
+        {title:"Tytuł", url:"img/galeria/IMG_4981.jpg", position:1},
+        {title:"Tytuł", url:"img/galeria/IMG_5000.jpg", position:2},
+        {title:"Tytuł", url:"img/galeria/IMG_5033.jpg", position:1},
+        {title:"Tytuł", url:"img/galeria/IMG_5033.jpg", position:1},
+        {title:"Tytuł", url:"img/galeria/IMG_5046.jpg", position:1},
+        {title:"Tytuł", url:"img/galeria/IMG_5046.jpg", position:1},
+        {title:"Tytuł", url:"img/galeria/IMG_5081.jpg", position:2},
+        {title:"Tytuł", url:"img/galeria/IMG_5093.jpg", position:2},
+        {title:"Tytuł", url:"img/galeria/IMG_5134.jpg", position:2},
+        {title:"Tytuł", url:"img/galeria/IMG_5138.jpg", position:2},
+        {title:"Tytuł", url:"img/galeria/IMG_5150.jpg", position:1},
+        {title:"Tytuł", url:"img/galeria/IMG_5165.jpg", position:2},
+        {title:"Tytuł", url:"img/galeria/IMG_5280.jpg", position:1},
+        {title:"Tytuł", url:"img/galeria/IMG_5341.jpg", position:2}
     ];
 
 
@@ -553,9 +554,12 @@
         hook_C.append( content_C );
         hook_I.append( content_I );
     }
-
+    
     function gallery(){
         console.log(imgs);
+        imgs.sort(function(a, b){
+            return a.position-b.position
+        })
         var hook=$( "#galery-hook" );
         var row=1;
         var div='<div class="row pt-4">',modal=' ';
