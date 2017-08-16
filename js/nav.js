@@ -14,7 +14,8 @@ var nav='<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inv
     '    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mężczyzna</a>\n' +
     '    <div class="dropdown-menu" aria-labelledby="dropdown01">\n' +
     '    <a class="dropdown-item" href="Kurtka_600.html">Kurtka</a>\n' +
-    '    <a class="dropdown-item" href="Spodnie_700.html">Spodnie</a>\n' +
+    '    <a class="dropdown-item" href="Spodnie_700.html">Spodnie 700</a>\n' +
+    '    <a class="dropdown-item" href="Spodnie_701.html">Spodnie 701</a>\n' +
     '    <a class="dropdown-item" href="Koszula_829-KO.html">Koszula</a>\n' +
     '    <a class="dropdown-item" href="Kamizelka_442-O.html">Kamizelka</a>\n' +
     '    <a class="dropdown-item" href="Czapka_103.html">Czapka</a>\n' +
@@ -25,7 +26,8 @@ var nav='<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inv
     '    <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kobieta</a>\n' +
     '    <div class="dropdown-menu" aria-labelledby="dropdown02">\n' +
     '    <a class="dropdown-item" href="Kurtka_600_k.html">Kurtka</a>\n' +
-    '    <a class="dropdown-item" href="Spodnie_700_k.html">Spodnie</a>\n' +
+    '    <a class="dropdown-item" href="Spodnie_700_k.html">Spodnie 700</a>\n' +
+    '    <a class="dropdown-item" href="Spodnie_701_k.html">Spodnie 701</a>\n' +
     '    <a class="dropdown-item" href="Koszula_829-KO_k.html">Koszula</a>\n' +
     '    <a class="dropdown-item" href="Kamizelka_442-O_k.html">Kamizelka</a>\n' +
     '    <a class="dropdown-item" href="Czapka_103_k.html">Czapka</a>\n' +

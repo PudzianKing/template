@@ -6,6 +6,9 @@
         margin-top: 600px;/*600 old menu*/
     }
 }
+.navbar-toggler{
+    z-index: 99999;
+}
 body{
     padding-top: 100px;
     font-family: 'Roboto', sans-serif;;
@@ -80,6 +83,10 @@ p{
     .navbar-brand{
         /*margin-left: 8rem;*/
         /*margin-right: 8rem;*/
+    }
+    .nav-tabs .nav-item:first-child{
+        margin-left: 20%;
+
     }
 }
 @media (min-width: 1024px) {
@@ -286,6 +293,7 @@ p{
 .portal{
     border: solid 4px #ff7401;
 }
+
 
 footer{
     background-color: #000000;
