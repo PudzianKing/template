@@ -43,9 +43,9 @@ var nav='<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inv
     '<a class="dropdown-item" href="sub_zero.html">SUB ZERO</a>\n' +
     '</div>\n' +
     '</li>\n' +
-    '<li class="nav-item">\n' +
-    '    <a class="nav-link" href="gdzie_kupic.html">Gdzie kupić</a>\n' +
-    '</li>\n' +
+    // '<li class="nav-item">\n' +
+    // '    <a class="nav-link" href="gdzie_kupic.html">Gdzie kupić</a>\n' +
+    // '</li>\n' +
     '<li class="nav-item">\n' +
     '    <a class="nav-link" href="obsluga.html">Obsługa klienta</a>\n' +
     '</li>\n' +
