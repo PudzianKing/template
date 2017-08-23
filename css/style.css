@@ -17,6 +17,7 @@ h1{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
+
 p{
     font-family: Roboto;
     font-size: 0.875rem;
@@ -63,9 +64,13 @@ p{
     /*color: #898989;*/
 }
 .a-h2{
+    color: #292b2c;
     cursor: pointer;
 }
-
+.a-h2:hover{
+    color: #292b2c;
+    text-decoration-color: #292b2c;
+}
 .border-bottom-grey{
     border-bottom: solid 1px #898989;
 }
