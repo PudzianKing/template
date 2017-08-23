@@ -66,10 +66,17 @@ p{
 .a-h2{
     color: #292b2c;
     cursor: pointer;
+    text-decoration: none;
 }
 .a-h2:hover{
     color: #292b2c;
-    text-decoration-color: #292b2c;
+    text-decoration: none;
+}
+a-h2:focus{
+    text-decoration: none;
+}
+a-h2:visited{
+    text-decoration: none;
 }
 .border-bottom-grey{
     border-bottom: solid 1px #898989;
