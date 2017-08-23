@@ -18,8 +18,9 @@ var nav='<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inv
     '    <a class="dropdown-item" href="Spodnie_701.html">Spodnie 701</a>\n' +
     '    <a class="dropdown-item" href="Koszula_829-KO.html">Koszula</a>\n' +
     '    <a class="dropdown-item" href="Kamizelka_442-O.html">Kamizelka</a>\n' +
-    '    <a class="dropdown-item" href="Czapka_103.html">Czapka</a>\n' +
     '    <a class="dropdown-item" href="Koszulka_959-OL.html">Koszulka</a>\n' +
+    '    <a class="dropdown-item" href="Czapka_103.html">Czapka</a>\n' +
+
     '    </div>\n' +
     '    </li>\n' +
     '    <li class="nav-item dropdown">\n' +
@@ -30,17 +31,18 @@ var nav='<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inv
     '    <a class="dropdown-item" href="Spodnie_701_k.html">Spodnie 701</a>\n' +
     '    <a class="dropdown-item" href="Koszula_829-KO_k.html">Koszula</a>\n' +
     '    <a class="dropdown-item" href="Kamizelka_442-O_k.html">Kamizelka</a>\n' +
-    '    <a class="dropdown-item" href="Czapka_103_k.html">Czapka</a>\n' +
     '    <a class="dropdown-item" href="Koszulka_959-OL_k.html">Koszulka</a>\n' +
+    '    <a class="dropdown-item" href="Czapka_103_k.html">Czapka</a>\n' +
+
     '    </div>\n' +
     '    </li>\n' +
     '    <li class="nav-item dropdown">\n' +
     '    <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Technologie</a>\n' +
     '    <div class="dropdown-menu" aria-labelledby="dropdown03">\n' +
-    '    <a class="dropdown-item" href="Inscet_proof.html">InsectProof</a>\n' +
     '    <a class="dropdown-item" href="dry_care.html">Dry Care</a>\n' +
-    '<a class="dropdown-item" href="uv_proof.html">UV Proof</a>\n' +
-    '<a class="dropdown-item" href="sub_zero.html">SUB ZERO</a>\n' +
+    '    <a class="dropdown-item" href="sub_zero.html">SUB ZERO</a>\n' +
+    '    <a class="dropdown-item" href="Inscet_proof.html">InsectProof</a>\n' +
+    '    <a class="dropdown-item" href="uv_proof.html">UV Proof</a>\n' +
     '</div>\n' +
     '</li>\n' +
     // '<li class="nav-item">\n' +
