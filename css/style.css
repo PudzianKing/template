@@ -19,7 +19,7 @@ h1{
 }
 
 p{
-    font-family: Roboto;
+    font-family: Poppins;
     font-size: 0.875rem;
 }
 .carousel-indicators-img{
@@ -91,10 +91,15 @@ a-h2:visited{
     font-weight: bold;
     font-size: 1.5rem;
 }
+.title-small-speciall{
+    font-family: Poppins;
+    font-size: 1.5rem;
+    color: #000000;
+}
 @media (min-width: 720px) {
     .navbar-brand{
         /*margin-left: 8rem;*/
-        /*margin-right: 8rem;*/
+        margin-right: 8rem;
     }
     .nav-tabs .nav-item:first-child{
         margin-left: 20%;
@@ -112,7 +117,7 @@ a-h2:visited{
         padding-right: 0;/*3 old menu*/
     }
     .navbar-collapse li{
-        padding-right: 2.6rem;/*3 old menu*/
+        padding-right: 3.4rem;/*3 old menu*/
     }
 }
 @media (min-width: 1200px){
@@ -172,6 +177,10 @@ a-h2:visited{
 .bg-orange p{
     color: #fff;
     font-size: 1.1rem
+}
+.bg-orange p.black{
+    color: #000000 !important;
+    font-size: 0.875rem !important;
 }
 .bg-orange h1{
     padding-top: 5rem;
@@ -309,7 +318,7 @@ a-h2:visited{
 
 footer{
     background-color: #000000;
-    margin-top: 8rem;
+    padding-top: 8rem;
 }
 footer p{
     margin-bottom: 0;
@@ -318,7 +327,10 @@ footer p{
     color: #fff;
 }
 
-
+.black{
+    color: #000000;
+    font-size: 0.875rem;
+}
 
 .video-background {
     background: #000;
